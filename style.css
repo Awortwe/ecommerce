@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: monospace;
+}
+
+nav{
+    background: darkblue;
+    height: 80px;
+}
+
+.my_logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    font-weight: bold;
+    padding: 0 100px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+.checkbtn{
+    float: right;
+    color: white;
+    line-height: 80px;
+    font-size: 30px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width:750px)
+{
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        background-color: darkblue;
+        width: 100%;
+        height: 100vh;
+        top: 60px;
+        text-align: center;
+        left: -100%;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    #check:checked~ul{
+        left: 0px;
+    }
+}
+
+
+.my_cover{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.p_title{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.card{
+    max-width: 330px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.0);
+    margin: 25px;
+    padding: 25px;
+}
+
+.card:hover{
+    box-shadow: 0 14px 18px 0 skyblue;
+}
+
+.p_image{
+    width: 100%;
+    height: 250px;
+}
+
+.my_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h4{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+    margin: 10px;
+}
+
+.card a{
+    padding: 10px;
+    background-color: skyblue;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+.card a:hover{
+    background-color: black;
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+}
+
+.footer_title h3{
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer_content h4{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.footer_content p{
+    color: white;
+    padding: 10px;
+}
+
+.footer_content a{
+    color: white;
+}
+
+.footer_content a:hover{
+    color: black;
+    background: white;
+}
+
+.footer .footer_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width:650px)
+{
+    .footer .footer_content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+footer h3{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.my_form{
+    background-color: skyblue;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.my_form h2{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.input_deg{
+    padding: 10px;
+}
+
+.input_deg label{
+    width: 100px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input[type='text'],[type='email'],[type='password']{
+    width: 40%;
+    padding: 12px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+input[type='submit']
+{
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
